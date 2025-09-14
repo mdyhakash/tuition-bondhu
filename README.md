@@ -1,37 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tuition Bondhu
 
-## Getting Started
+![User Dashboard](public/user-dashboard-preview.png)
 
-First, run the development server:
+Tuition Bondhu is a modern platform connecting students and tutors across Bangladesh. It enables students to find the perfect tutor for their learning needs, book sessions, and manage their progress, while tutors can showcase their expertise and manage applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Student & Tutor Registration:** Sign up as a student or tutor and complete your profile.
+- **Search & Filter:** Find tutors by subject, location, price, and more.
+- **Job Posting:** Students can post tutoring jobs with detailed requirements.
+- **Dashboard:** Personalized dashboards for students, tutors, and admins.
+- **Messaging:** Secure communication between students and tutors.
+- **Session Management:** Track upcoming and completed sessions.
+- **Payments:** Secure payment processing and earnings tracking.
+- **Admin Panel:** Manage users, jobs, payments, reports, and platform settings.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
 
-## Learn More
+   ```sh
+   git clone https://github.com/mdyhakash/tuition-bondhu.git
+   cd tuition-bondhu
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   pnpm install
+   # or
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Configure environment:**
 
-## Deploy on Vercel
+   - Edit any required environment variables in `.env.local` (if needed).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Run the development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# tuition-bondhu
+   ```sh
+   pnpm dev
+   # or
+   npm run dev
+   ```
+
+5. **Access the app:**
+   - Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Usage
+
+- **Register:** Choose to sign up as a student or tutor.
+- **Complete Profile:** Fill in your details, select subjects, and upload documents.
+- **Search/Apply:** Students can search for tutors or post jobs; tutors can browse jobs and apply.
+- **Dashboard:** Manage sessions, payments, and messages from your dashboard.
+- **Admin:** Access `/dashboard/admin` for platform management.
+
+## Technologies
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
+- Recharts
+
+## Project Structure
+
+- `app/` – Main application pages (student, tutor, admin, jobs, register, etc.)
+- `components/` – Reusable UI components
+- `hooks/` – Custom React hooks
+- `lib/` – Utility functions
+- `public/` – Static assets (images, icons)
+- `styles/` – Global styles
+
+## Screenshots
+
+## 👥 Developers
+
+| Name                   | GitHub                                               | LinkedIn                                                                  |
+| ---------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------- |
+| Md Yasin Hossain Akash | [@mdyhakash](https://github.com/mdyhakash)           | [mdyhakash](https://www.linkedin.com/in/mdyhakash/)                       |
+| Nusrat Ahmmed Maisha   | [@nusratamaisha](https://github.com/nusratamaisha)   | [Nusrat Ahmmed Maisha](https://www.linkedin.com/in/nusratamaisha/)        |
+| C M Hasibul Hasan      | [@cmhasibulhasan](https://github.com/cmhasibulhasan) | [C M Hasibul Hasan](https://www.linkedin.com/in/hasibul-hasan-82b152284/) |
+| Tasnim Hasan Urmi      | [@tasnimurmi](https://github.com/tasnimurmi)         | [Tasnim Hasan Urmi](https://www.linkedin.com/in/tasnim-hasan-urmi/)       |
+
+**Tuition Bondhu** – Find the perfect tutor for your learning needs!
