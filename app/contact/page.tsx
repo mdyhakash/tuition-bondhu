@@ -234,8 +234,9 @@ export default function ContactPage() {
                     >
                       <HelpCircle className="w-4 h-4 text-primary flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">{question}</span>
-                    </div>
+                    </div> 
                   ))}
+                  
                 </div>
                 <Link href="/help">
                   <Button variant="outline" className="w-full mt-4 bg-transparent">
