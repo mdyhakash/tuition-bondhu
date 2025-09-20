@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { GraduationCap, Check, Star, Users, Video, Clock, Shield, ArrowRight } from "lucide-react"
+import { Check, Star, Users, Video, Clock, Shield, ArrowRight } from "lucide-react"
+import Navbar from "@/components/navbar"
 
 export default function PricingPage() {
   const pricingPlans = [
@@ -71,52 +72,8 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <motion.header
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border"
-      >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
-              <Link href="/" className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <GraduationCap className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <span className="text-xl font-serif font-bold text-foreground">Tuition Bondhu</span>
-              </Link>
-            </motion.div>
-
-            <nav className="hidden md:flex items-center space-x-6">
-              <Link href="/search" className="text-muted-foreground hover:text-primary transition-colors">
-                Find Tutors
-              </Link>
-              <Link href="/register" className="text-muted-foreground hover:text-primary transition-colors">
-                Become a Tutor
-              </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                How it Works
-              </Link>
-              <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                About
-              </Link>
-            </nav>
-
-            <div className="flex items-center space-x-3">
-              <Link href="/login">
-                <Button variant="ghost" className="hidden sm:inline-flex">
-                  Sign In
-                </Button>
-              </Link>
-              <Link href="/register">
-                <Button className="bg-primary hover:bg-primary/90">Get Started</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </motion.header>
+      {/* Navbar */}
+      <Navbar />
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-card via-background to-muted">
